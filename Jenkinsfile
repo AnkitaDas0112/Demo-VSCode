@@ -6,11 +6,11 @@ node {
     stage('Build Image') {
         app = docker.build("ankitadas478/testjenkinsnodesneha")
     }
-    stage('Test Image') {
-        app.inside {
-            echo "Test Passed"
-        }
-    }
+    // stage('Test Image') {
+    //     app.inside {
+    //         echo "Test Passed"
+    //     }
+    // }
     stage('Push Image') {
         docker.withRegistry('https://registry.hub.docker.com ', 'docker-hub') {
             app.push("${env.BUILD_NUMBER}")
