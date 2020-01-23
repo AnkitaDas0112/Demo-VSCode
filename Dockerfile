@@ -1,4 +1,4 @@
-FROM node:10-onbuild
+FROM node:10 as build
 
 LABEL maintainer "ankitadas478@gmail.com"
 
