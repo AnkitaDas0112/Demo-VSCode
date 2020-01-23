@@ -4,7 +4,7 @@ node {
         checkout scm
     }
     stage('Build Image') {
-        app = docker.build("ankitadas0112/TestJenkinsNodeSneha")
+        app = docker.build("ankitadas478/testjenkinsnodesneha")
     }
     stage('Test Image') {
         app.inside {

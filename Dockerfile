@@ -1,6 +1,6 @@
 FROM node:10-onbuild
 
-LABEL maintainer "sneha.mitra2607@gmail.com"
+LABEL maintainer "ankitadas478@gmail.com"
 
 HEALTHCHECK --interval=5s \
             --timeout=5s \
